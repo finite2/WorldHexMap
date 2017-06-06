@@ -1,6 +1,8 @@
-# World Hex Map
+# [World Hex Map]{https://finite2.github.io/WorldHexMap/}
 
 This is a d3js driven data visualisation of the world countries. There are three hex maps: one per country, one weighted by population and one weighted by size. There is a drop down to add a variety of metrics for each country. There is also a drop down to toggle showing only the UN countries or not.
+
+You can view the [index.html here]{https://finite2.github.io/WorldHexMap/}.
 
 ## Disclaimer
 

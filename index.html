@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <style>
+      svg { position: relative; left: 25px; }
+      .hex {
+        border-radius: 10px;
+      }
+
+      .hex2 {
+        border-radius: 0px;
+      }
+      
+      .hidden {
+        visibility:hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="src/css/d3-tip.css">
+  </head>
+  
+  
+  <body>
+    <div id="svgFrame"></div>
+      <div class="chartArea">
+        <select id='demoSelection' class="demoSelection">
+          <option value="pop">Population</option>
+          <option value="size">Country Size</option>
+          <option value="popkm">Population Density</option>
+          <option value="un">United Nations countries</option>
+          <!--<option value="region">United Nations Continental regions</option>-->
+          <!--<option value="statRegion">United Nations Statistical regions</option>-->
+          <option value="womenPop">Women per 100 men (population)</option>
+          <option value="womenBirth">Women per 100 men (at birth)</option>
+          <option value="povertyLine">Below poverty line $1.25 (population)</option>
+          <option value="GDP">GDP ($)</option>
+          <option value="GDPpp">GDP per capita ($ per person)</option>
+          <option value="Birthrate">Birth rate (per 1000 people)</option>
+          <option value="DeathRate">Death rate  (per 1000 people)</option>
+          <option value="LifeExpectancy">Life expectancy</option>
+        </select>
+
+        <select id='mapSelection' class="mapSelection">
+          <option value="hexes_one">One hex per country</option>
+          <option value="hexes_pop">One hex per 10 million people</option>
+          <option value="hexes_size">One hex per 100 000 km</option>
+        </select>
+        <select id='unOnly' class="unOnly">
+          <option value=false>Show all defined regions</option>
+          <option value=true>Only show UN nations</option>
+        </select>
+      </div>
+      <div id='scripts'>
+        <script src="src/js/jquery-2.2.0.min.js"></script>
+        <script src="src/js/d3.v4.min.js"></script>
+        <script src="src/js/d3-tip.js"></script>
+        <script src="src/js/hexmap_v2.d3.js"></script>
+        <script src="src/js/legends.d3.js"></script>
+        <script src="src/js/reshape.js"></script>
+        <script src="hexData/WorldHexData_multi.js"></script>
+        <script src="src/js/worldMaps.js"></script>
+    </div>
+  </body>
+</html>

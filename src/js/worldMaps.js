@@ -292,8 +292,8 @@ selections.un = function() {
   svg.call(tip)
   
   legendData = [
-    {col: 0, text: 'Country of UN'},
-    {col: 1, text: 'Not country of UN'}
+    {col: 1, text: 'Country of UN'},
+    {col: 0, text: 'Not country of UN'}
   ]
   
   legend = legends.categories().symbol(hexmap.symbol).legendData(legendData).colourScale(colourScale).title('United Nations status');
